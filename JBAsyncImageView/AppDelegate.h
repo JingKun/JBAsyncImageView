@@ -1,0 +1,19 @@
+//
+//  AppDelegate.h
+//  JBAsyncImageView
+//
+//  Created by Jesse Bunch on 12/31/11.
+//  Copyright (c) 2011 __MyCompanyName__. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+@class ViewController;
+
+@interface AppDelegate : UIResponder <UIApplicationDelegate>
+
+@property (strong, nonatomic) UIWindow *window;
+
+@property (strong, nonatomic) ViewController *viewController;
+
+@end

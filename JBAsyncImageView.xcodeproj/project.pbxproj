@@ -1,0 +1,322 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0567CE5114AF81BD00ABDC61 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0567CE5014AF81BD00ABDC61 /* UIKit.framework */; };
+		0567CE5314AF81BD00ABDC61 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0567CE5214AF81BD00ABDC61 /* Foundation.framework */; };
+		0567CE5514AF81BD00ABDC61 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0567CE5414AF81BD00ABDC61 /* CoreGraphics.framework */; };
+		0567CE5B14AF81BD00ABDC61 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0567CE5914AF81BD00ABDC61 /* InfoPlist.strings */; };
+		0567CE5D14AF81BD00ABDC61 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0567CE5C14AF81BD00ABDC61 /* main.m */; };
+		0567CE6114AF81BD00ABDC61 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0567CE6014AF81BD00ABDC61 /* AppDelegate.m */; };
+		0567CE6414AF81BD00ABDC61 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0567CE6314AF81BD00ABDC61 /* ViewController.m */; };
+		0567CE6714AF81BD00ABDC61 /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0567CE6514AF81BD00ABDC61 /* ViewController_iPhone.xib */; };
+		0567CE6A14AF81BD00ABDC61 /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0567CE6814AF81BD00ABDC61 /* ViewController_iPad.xib */; };
+		0567CE7314AF822900ABDC61 /* JBAsyncImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0567CE7214AF822900ABDC61 /* JBAsyncImageView.m */; };
+		0567CE7514AF8A8A00ABDC61 /* libdispatch.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0567CE7414AF8A8A00ABDC61 /* libdispatch.dylib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0567CE4C14AF81BD00ABDC61 /* JBAsyncImageView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JBAsyncImageView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0567CE5014AF81BD00ABDC61 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		0567CE5214AF81BD00ABDC61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		0567CE5414AF81BD00ABDC61 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		0567CE5814AF81BD00ABDC61 /* JBAsyncImageView-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JBAsyncImageView-Info.plist"; sourceTree = "<group>"; };
+		0567CE5A14AF81BD00ABDC61 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0567CE5C14AF81BD00ABDC61 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0567CE5E14AF81BD00ABDC61 /* JBAsyncImageView-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JBAsyncImageView-Prefix.pch"; sourceTree = "<group>"; };
+		0567CE5F14AF81BD00ABDC61 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0567CE6014AF81BD00ABDC61 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0567CE6214AF81BD00ABDC61 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		0567CE6314AF81BD00ABDC61 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		0567CE6614AF81BD00ABDC61 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPhone.xib; sourceTree = "<group>"; };
+		0567CE6914AF81BD00ABDC61 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPad.xib; sourceTree = "<group>"; };
+		0567CE7114AF822900ABDC61 /* JBAsyncImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JBAsyncImageView.h; path = Source/JBAsyncImageView.h; sourceTree = "<group>"; };
+		0567CE7214AF822900ABDC61 /* JBAsyncImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JBAsyncImageView.m; path = Source/JBAsyncImageView.m; sourceTree = "<group>"; };
+		0567CE7414AF8A8A00ABDC61 /* libdispatch.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libdispatch.dylib; path = usr/lib/system/libdispatch.dylib; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0567CE4914AF81BD00ABDC61 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0567CE7514AF8A8A00ABDC61 /* libdispatch.dylib in Frameworks */,
+				0567CE5114AF81BD00ABDC61 /* UIKit.framework in Frameworks */,
+				0567CE5314AF81BD00ABDC61 /* Foundation.framework in Frameworks */,
+				0567CE5514AF81BD00ABDC61 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0567CE4114AF81BD00ABDC61 = {
+			isa = PBXGroup;
+			children = (
+				0567CE7014AF820100ABDC61 /* JBAsyncImageViewSource */,
+				0567CE5614AF81BD00ABDC61 /* JBAsyncImageViewSample */,
+				0567CE4F14AF81BD00ABDC61 /* Frameworks */,
+				0567CE4D14AF81BD00ABDC61 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0567CE4D14AF81BD00ABDC61 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0567CE4C14AF81BD00ABDC61 /* JBAsyncImageView.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0567CE4F14AF81BD00ABDC61 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0567CE7414AF8A8A00ABDC61 /* libdispatch.dylib */,
+				0567CE5014AF81BD00ABDC61 /* UIKit.framework */,
+				0567CE5214AF81BD00ABDC61 /* Foundation.framework */,
+				0567CE5414AF81BD00ABDC61 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0567CE5614AF81BD00ABDC61 /* JBAsyncImageViewSample */ = {
+			isa = PBXGroup;
+			children = (
+				0567CE5F14AF81BD00ABDC61 /* AppDelegate.h */,
+				0567CE6014AF81BD00ABDC61 /* AppDelegate.m */,
+				0567CE6214AF81BD00ABDC61 /* ViewController.h */,
+				0567CE6314AF81BD00ABDC61 /* ViewController.m */,
+				0567CE6514AF81BD00ABDC61 /* ViewController_iPhone.xib */,
+				0567CE6814AF81BD00ABDC61 /* ViewController_iPad.xib */,
+				0567CE5714AF81BD00ABDC61 /* Supporting Files */,
+			);
+			name = JBAsyncImageViewSample;
+			path = JBAsyncImageView;
+			sourceTree = "<group>";
+		};
+		0567CE5714AF81BD00ABDC61 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0567CE5814AF81BD00ABDC61 /* JBAsyncImageView-Info.plist */,
+				0567CE5914AF81BD00ABDC61 /* InfoPlist.strings */,
+				0567CE5C14AF81BD00ABDC61 /* main.m */,
+				0567CE5E14AF81BD00ABDC61 /* JBAsyncImageView-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0567CE7014AF820100ABDC61 /* JBAsyncImageViewSource */ = {
+			isa = PBXGroup;
+			children = (
+				0567CE7114AF822900ABDC61 /* JBAsyncImageView.h */,
+				0567CE7214AF822900ABDC61 /* JBAsyncImageView.m */,
+			);
+			name = JBAsyncImageViewSource;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0567CE4B14AF81BD00ABDC61 /* JBAsyncImageView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0567CE6D14AF81BD00ABDC61 /* Build configuration list for PBXNativeTarget "JBAsyncImageView" */;
+			buildPhases = (
+				0567CE4814AF81BD00ABDC61 /* Sources */,
+				0567CE4914AF81BD00ABDC61 /* Frameworks */,
+				0567CE4A14AF81BD00ABDC61 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JBAsyncImageView;
+			productName = JBAsyncImageView;
+			productReference = 0567CE4C14AF81BD00ABDC61 /* JBAsyncImageView.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0567CE4314AF81BD00ABDC61 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 0567CE4614AF81BD00ABDC61 /* Build configuration list for PBXProject "JBAsyncImageView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0567CE4114AF81BD00ABDC61;
+			productRefGroup = 0567CE4D14AF81BD00ABDC61 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0567CE4B14AF81BD00ABDC61 /* JBAsyncImageView */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0567CE4A14AF81BD00ABDC61 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0567CE5B14AF81BD00ABDC61 /* InfoPlist.strings in Resources */,
+				0567CE6714AF81BD00ABDC61 /* ViewController_iPhone.xib in Resources */,
+				0567CE6A14AF81BD00ABDC61 /* ViewController_iPad.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0567CE4814AF81BD00ABDC61 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0567CE5D14AF81BD00ABDC61 /* main.m in Sources */,
+				0567CE6114AF81BD00ABDC61 /* AppDelegate.m in Sources */,
+				0567CE6414AF81BD00ABDC61 /* ViewController.m in Sources */,
+				0567CE7314AF822900ABDC61 /* JBAsyncImageView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		0567CE5914AF81BD00ABDC61 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0567CE5A14AF81BD00ABDC61 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		0567CE6514AF81BD00ABDC61 /* ViewController_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0567CE6614AF81BD00ABDC61 /* en */,
+			);
+			name = ViewController_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		0567CE6814AF81BD00ABDC61 /* ViewController_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0567CE6914AF81BD00ABDC61 /* en */,
+			);
+			name = ViewController_iPad.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0567CE6B14AF81BD00ABDC61 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0567CE6C14AF81BD00ABDC61 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0567CE6E14AF81BD00ABDC61 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JBAsyncImageView/JBAsyncImageView-Prefix.pch";
+				INFOPLIST_FILE = "JBAsyncImageView/JBAsyncImageView-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SDKROOT)/usr/lib/system\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		0567CE6F14AF81BD00ABDC61 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JBAsyncImageView/JBAsyncImageView-Prefix.pch";
+				INFOPLIST_FILE = "JBAsyncImageView/JBAsyncImageView-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SDKROOT)/usr/lib/system\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0567CE4614AF81BD00ABDC61 /* Build configuration list for PBXProject "JBAsyncImageView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0567CE6B14AF81BD00ABDC61 /* Debug */,
+				0567CE6C14AF81BD00ABDC61 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0567CE6D14AF81BD00ABDC61 /* Build configuration list for PBXNativeTarget "JBAsyncImageView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0567CE6E14AF81BD00ABDC61 /* Debug */,
+				0567CE6F14AF81BD00ABDC61 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0567CE4314AF81BD00ABDC61 /* Project object */;
+}
