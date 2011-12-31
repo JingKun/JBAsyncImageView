@@ -244,6 +244,7 @@ delegate = delegate_;
 	
 	// Create image from data
 	self.image = [UIImage imageWithData:imageData_];
+	self.imageData = nil;
 	self.showingActivityIndicator = NO;
 	
 	// Notify the delegate
