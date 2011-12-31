@@ -143,6 +143,8 @@ delegate = delegate_;
 														   delegate:self 
 												   startImmediately:YES];
 	
+	imageURL_ = imageURL;
+	
 }
 
 
