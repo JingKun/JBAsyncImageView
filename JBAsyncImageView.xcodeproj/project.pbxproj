@@ -18,6 +18,7 @@
 		0567CE6A14AF81BD00ABDC61 /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0567CE6814AF81BD00ABDC61 /* ViewController_iPad.xib */; };
 		0567CE7314AF822900ABDC61 /* JBAsyncImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0567CE7214AF822900ABDC61 /* JBAsyncImageView.m */; };
 		0567CE7514AF8A8A00ABDC61 /* libdispatch.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0567CE7414AF8A8A00ABDC61 /* libdispatch.dylib */; };
+		0567CE7C14AF9E6A00ABDC61 /* readme.md in Resources */ = {isa = PBXBuildFile; fileRef = 0567CE7B14AF9E6A00ABDC61 /* readme.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		0567CE7114AF822900ABDC61 /* JBAsyncImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JBAsyncImageView.h; path = Source/JBAsyncImageView.h; sourceTree = "<group>"; };
 		0567CE7214AF822900ABDC61 /* JBAsyncImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JBAsyncImageView.m; path = Source/JBAsyncImageView.m; sourceTree = "<group>"; };
 		0567CE7414AF8A8A00ABDC61 /* libdispatch.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libdispatch.dylib; path = usr/lib/system/libdispatch.dylib; sourceTree = SDKROOT; };
+		0567CE7B14AF9E6A00ABDC61 /* readme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = readme.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 		0567CE4114AF81BD00ABDC61 = {
 			isa = PBXGroup;
 			children = (
+				0567CE7B14AF9E6A00ABDC61 /* readme.md */,
 				0567CE7014AF820100ABDC61 /* JBAsyncImageViewSource */,
 				0567CE5614AF81BD00ABDC61 /* JBAsyncImageViewSample */,
 				0567CE4F14AF81BD00ABDC61 /* Frameworks */,
@@ -172,6 +175,7 @@
 				0567CE5B14AF81BD00ABDC61 /* InfoPlist.strings in Resources */,
 				0567CE6714AF81BD00ABDC61 /* ViewController_iPhone.xib in Resources */,
 				0567CE6A14AF81BD00ABDC61 /* ViewController_iPad.xib in Resources */,
+				0567CE7C14AF9E6A00ABDC61 /* readme.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

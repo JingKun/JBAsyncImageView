@@ -51,6 +51,9 @@
 // Delegate
 @property(nonatomic,strong) id<JBAsyncImageViewDelegate> delegate;
 
+// Designated initializer
+-(id)initWithURL:(NSURL *)urlToLoad;
+
 
 @end
 

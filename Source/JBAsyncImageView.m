@@ -46,7 +46,22 @@ delegate = delegate_;
 #pragma mark - *** Initializaers ***
 
 /**
- * Designated Initializer
+ * Designated initializer for this class
+ * @author Jesse Bunch
+ **/
+-(id)initWithURL:(NSURL *)urlToLoad {
+	
+	if ((self = [super init])) {
+		[self initializeClass];
+		self.imageURL = urlToLoad;
+	}
+	
+	return self;
+	
+}
+
+/**
+ * Designated initializer for super class
  * @author Jesse Bunch
  **/
 - (id)initWithImage:(UIImage *)image highlightedImage:(UIImage *)highlightedImage {
