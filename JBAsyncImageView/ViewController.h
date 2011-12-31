@@ -7,10 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "JBAsyncImageView.h"
 
-@class JBAsyncImageView;
-
-@interface ViewController : UIViewController {
+@interface ViewController : UIViewController<JBAsyncImageViewDelegate> {
 	__weak IBOutlet JBAsyncImageView *asyncImageView;
 }
 

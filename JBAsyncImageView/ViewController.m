@@ -7,7 +7,6 @@
 //
 
 #import "ViewController.h"
-#import "JBAsyncImageView.h"
 
 @implementation ViewController
 
@@ -19,14 +18,18 @@
 
     [super viewDidLoad];
 	
-	// Success
-//	asyncImageView.imageURL = [NSURL URLWithString:@"http://f.cl.ly/items/3T0V0w0G3D0Q411k1p1n/congrats.png"];
+	// No cache while testing, remove for production
+	asyncImageView.cachesImage = NO;
+	asyncImageView.delegate = self;
 	
-	// Wrong MIME
+	// Success (delegate notified of success)
+	asyncImageView.imageURL = [NSURL URLWithString:@"http://f.cl.ly/items/3T0V0w0G3D0Q411k1p1n/congrats.png"];
+	
+	// Wrong MIME Error (delegate gets custom NSError about MIME type)
 //	asyncImageView.imageURL = [NSURL URLWithString:@"http://f.cl.ly/items/2y0m1S1w0A2y022z3d2Y/wrong%20mime.txt"];
 	
-	// Failed loading
-	asyncImageView.imageURL = [NSURL URLWithString:@"asdfasdfasdf"];
+	// Failed loading Error (delegate gets NSError from NSURLConnection delegate)
+//	asyncImageView.imageURL = [NSURL URLWithString:@"asdfasdfasdf"];
 	
 }
 
@@ -38,6 +41,16 @@
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
 	return YES;
+}
+
+
+
+#pragma mark - *** JBAsyncImageViewDelegate ***
+
+-(void)imageView:(JBAsyncImageView *)sender failedLoadingImageFromURL:(NSURL *)url withError:(NSError *)error {
+	UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Download Failed" message:[error localizedDescription] delegate:self
+											  cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+	[alertView show];
 }
 
 @end

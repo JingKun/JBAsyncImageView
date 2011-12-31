@@ -20,6 +20,8 @@
 	NSURL *imageURL_;
 	UIActivityIndicatorView *activityIndicator_;
 	BOOL showingActivityIndicator_;
+	BOOL cachesImage_;
+	NSTimeInterval downloadTimeoutInterval_;
 	NSArray *mimeTypesAllowed_;
 	id<JBAsyncImageViewDelegate> delegate_;
 	
@@ -32,6 +34,12 @@
 
 // URL of image to load
 @property(nonatomic,strong) NSURL *imageURL;
+
+// If NO, no cache will be set or used. Defaults YES.
+@property(nonatomic) BOOL cachesImage;
+
+// Download timeout, defaults to 15secs
+@property(nonatomic) NSTimeInterval downloadTimeoutInterval;
 
 // Hide or show the activity indicator
 @property(nonatomic) BOOL showingActivityIndicator;

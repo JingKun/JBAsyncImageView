@@ -31,8 +31,10 @@
 @synthesize 
 imageURL = imageURL_,
 activityIndicator = activityIndicator_,
+cachesImage = cachesImage_,
 showingActivityIndicator = showingActivityIndicator_,
 imageData = imageData_,
+downloadTimeoutInterval = downloadTimeoutInterval_,
 imageConnection = imageConnection_,
 imageRequest = imageRequest_,
 mimeTypesAllowed = mimeTypesAllowed_,
@@ -83,6 +85,8 @@ delegate = delegate_;
 	self.activityIndicator.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin|UIViewAutoresizingFlexibleTopMargin|UIViewAutoresizingFlexibleRightMargin|UIViewAutoresizingFlexibleBottomMargin;
 	self.activityIndicator.hidesWhenStopped = YES;
 	self.mimeTypesAllowed = [NSArray arrayWithObjects:@"image/png", @"image/jpeg", @"image/jpg", @"image/gif", nil];
+	self.cachesImage = YES;
+	self.downloadTimeoutInterval = 15.0f;
 }
 
 /**
@@ -116,8 +120,8 @@ delegate = delegate_;
 	
 	// Create request
 	self.imageRequest = [[NSURLRequest alloc] initWithURL:imageURL 
-											  cachePolicy:NSURLRequestReloadIgnoringLocalCacheData 
-										  timeoutInterval:15.0f];
+											  cachePolicy:(self.cachesImage) ? NSURLRequestReturnCacheDataElseLoad : NSURLRequestReloadIgnoringLocalCacheData 
+										  timeoutInterval:self.downloadTimeoutInterval];
 	
 	// Begin download
 	self.imageConnection = [[NSURLConnection alloc] initWithRequest:self.imageRequest 
@@ -187,7 +191,8 @@ delegate = delegate_;
 		// Error for delegate
 		validationError = [NSError errorWithDomain:@"com.jessebunch.jbasyncimageview" 
 											  code:406 
-										  userInfo:[NSDictionary dictionaryWithObjectsAndKeys:@"MIME type is not allowed.", NSUnderlyingErrorKey, nil]];
+										  userInfo:[NSDictionary dictionaryWithObjectsAndKeys:
+													[NSString stringWithFormat:@"MIME type is not allowed: %@", response.MIMEType], NSLocalizedDescriptionKey, nil]];
 		
 	}
 	
@@ -232,20 +237,6 @@ delegate = delegate_;
 	}
 	
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 @end
