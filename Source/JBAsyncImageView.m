@@ -15,7 +15,6 @@
 @interface JBAsyncImageView()
 
 @property(nonatomic,strong) UIActivityIndicatorView *activityIndicator;
-@property(nonatomic,strong) NSMutableData *imageData;
 @property(nonatomic,strong) NSURLConnection *imageConnection;
 @property(nonatomic,strong) NSURLRequest *imageRequest;
 
@@ -38,7 +37,8 @@ downloadTimeoutInterval = downloadTimeoutInterval_,
 imageConnection = imageConnection_,
 imageRequest = imageRequest_,
 mimeTypesAllowed = mimeTypesAllowed_,
-delegate = delegate_;
+delegate = delegate_,
+imageResponse = imageResponse_;
 
 
 
@@ -139,6 +139,7 @@ delegate = delegate_;
 										  timeoutInterval:self.downloadTimeoutInterval];
 	
 	// Begin download
+	self.imageData = nil;
 	self.imageConnection = [[NSURLConnection alloc] initWithRequest:self.imageRequest 
 														   delegate:self 
 												   startImmediately:YES];
@@ -197,6 +198,7 @@ delegate = delegate_;
 - (void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response {
 	
 	NSError *validationError = nil;
+	imageResponse_ = response;
 	
 	// Validate MIME type
 	if ([self.mimeTypesAllowed count] && ![self.mimeTypesAllowed containsObject:response.MIMEType]) {
@@ -246,7 +248,6 @@ delegate = delegate_;
 	
 	// Create image from data
 	self.image = [UIImage imageWithData:imageData_];
-	self.imageData = nil;
 	self.showingActivityIndicator = NO;
 	
 	// Notify the delegate

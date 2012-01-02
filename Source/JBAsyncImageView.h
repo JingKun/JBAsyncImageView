@@ -27,6 +27,7 @@
 	
 	@private
 	NSURLRequest *imageRequest_;
+	NSURLResponse *imageResponse_;
 	NSURLConnection *imageConnection_;
 	NSMutableData *imageData_;
 	
@@ -34,6 +35,12 @@
 
 // URL of image to load
 @property(nonatomic,strong) NSURL *imageURL;
+
+// Data of the dowloaded image
+@property(nonatomic,strong) NSMutableData *imageData;
+
+// Response containing info about the downloaded image
+@property(nonatomic,strong,readonly) NSURLResponse *imageResponse;
 
 // If NO, no cache will be set or used. Defaults YES.
 @property(nonatomic) BOOL cachesImage;
